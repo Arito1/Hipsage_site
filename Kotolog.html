@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotolog</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center; 
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery-item {
+            text-align: center;
+            font-size: 200%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+         @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery" id="gallery"></div>
+    
+    <script>
+        const gallery = document.getElementById('gallery');
+        const captions = [
+            "увложнитель воздуха 8л",
+            "аэрогриль",
+            "электробритва",
+            "Умная камера",
+            "Вакуумный упаковщик 1",
+            "Вакуумный упаковщик 2",
+            "Электробритва 5в1",
+            "Видеорегистратор",
+            "Камера вай фай"
+        ];
+
+        for (let i = 1; i <= captions.length; i++) {
+            const galleryItem = document.createElement('div');
+            galleryItem.classList.add('gallery-item');
+
+            const img = document.createElement('img');
+            img.src = `photo${i}.jpg`;
+
+            const caption = document.createElement('p');
+            caption.textContent = captions[i - 1];
+
+            galleryItem.appendChild(img);
+            galleryItem.appendChild(caption);
+            gallery.appendChild(galleryItem);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    width: 150px;
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+}
+.nav-link {
+    font-size: 1.1rem;
+    color: #f0f0f0 !important;
+}
+.nav-link:hover {
+    color: #00ff33 !important;
+}
+
+/* главная */
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgba(0, 123, 255, 0.8), rgba(0, 64, 128, 0.8));
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-section p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.hero-section .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+/* Карточка товара */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #007bff;
+    position: relative;
+}
+
+.card-title p {
+    display: none; /* Скрываем цену */
+    color: #333;
+    margin-top: 5px;
+}
+
+.card-title:hover p {
+    display: block; /* Показываем цену при наведении */
+}
+
+/* 2 колонки */
+.two-column {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.left-column, .right-column {
+    width: 48%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.right-column form .form-control {
+    border-radius: 20px;
+}
+.right-column button.btn-primary {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}

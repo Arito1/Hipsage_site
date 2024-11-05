@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="midstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img class="navbar-brand" src="Logo3.png" alt="Logo"> <!--логотип-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Kotolog.html">Kotolog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- главная -->
+<section class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="container" id="Home">
+        <h1 class="Welcome">Welcome to Hipsage Home</h1>
+        <p class="content">Discover amazing home appliances with us!</p>
+        <a href="https://kaspi.kz/shop/search/?text=&q=%3AavailableInZones%3AMagnum_ZONE1%3AmanufacturerName%3AHipsage%3AallMerchants%3A30123704&sort=relevance&filteredByCategory=false&sc=" class="btn btn-primary">Get Started</a>
+    </div>
+</section>
+
+<!-- карточки -->
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="first.JPG" class="card-img-top" alt="Card 1">
+                <div class="card-body">
+                    <h5 class="card-title">Air humidifier
+                        <p>45 000 KZT</p>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="second.JPG" class="card-img-top" alt="Card 2">
+                <div class="card-body">
+                    <h5 class="card-title">Aerogrill
+                        <p>34000 KZT</p>
+                    </h5>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="third.jpg" class="card-img-top" alt="Card 3">
+                <div class="card-body">
+                    <h5 class="card-title">Big Aerogrill
+                        <p>40 000 KZT</p>
+                    </h5>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 2 колонки-->
+<section class="two-column" id="About">
+    <div class="left-column">
+        <h2>About Our Services</h2>
+        <p>So far, we don't have a lot of goods because we only recently decided to deal with household appliances, but due to the fact that we are just starting, we have huge discounts and soon there will be a Kaspi Friday where you can buy goods in installments for 24 months. If you want to purchase high-quality products at a bargain price, you can write to us or follow the link</p>
+    </div>
+    <div class="right-column">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3" id="Contact">
+    <p>© 2024 if you want to contact us, follow us on  
+        <a href="https://www.instagram.com/hipsage.underwear?igsh=NzI0bnpydGF5czlz" class="text-white">Instagram</a>.
+    </p>
+</footer>
+</body>
+</html>
